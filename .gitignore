@@ -1,0 +1,7 @@
+src/
+build/
+install/
+log/
+
+# vscode cache file
+browse.vc.*
