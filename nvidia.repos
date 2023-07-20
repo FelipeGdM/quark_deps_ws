@@ -2,16 +2,16 @@ repositories:
   nvidia/isaac_ros_image_pipeline:
     type: git
     url: https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_image_pipeline.git
-    version: v0.10.1-dp
+    version: v0.31.0-dp
   nvidia/isaac_ros_common:
     type: git
     url: https://github.com/FelipeGdM/isaac_ros_common.git
     version: main
-    # version: v0.10.1-dp
+    # version: v0.31.0-dp
   nvidia/isaac_ros_nitros:
     type: git
     url: https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nitros.git
-    version: v0.10.1-dp
+    version: v0.31.0-dp
   osrf/negotiated:
     type: git
     url: https://github.com/osrf/negotiated.git
@@ -19,7 +19,7 @@ repositories:
   ros-perception/cv_bridge:
     type: git
     url: https://github.com/ros-perception/vision_opencv.git
-    version: ros2
+    version: humble
   ros-perception/image_pipeline:
     type: git
     url: https://github.com/ros-perception/image_pipeline.git
