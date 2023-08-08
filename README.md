@@ -2,6 +2,10 @@
 
 This project provides helper structure to compile ROS 2 Humble from source in a Jetson Xavier NX platform
 
+## Disabled packages
+
+- vision\_msgs\_rviz\_plugins
+
 ## Lesons learned
 
 - Some nvidia libraries require a newer version of cmake. It is possible to download it from the [official website](https://cmake.org/download/). A quick solution may be:
