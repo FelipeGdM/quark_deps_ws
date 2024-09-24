@@ -1,4 +1,4 @@
-all: nvidia ros2
+all: nvidia ros2 extra
 
 nvidia: nvidia.repos
 	mkdir -p src/nvidia
@@ -7,6 +7,10 @@ nvidia: nvidia.repos
 ros2: ros2.repos
 	mkdir -p src/ros2
 	vcs import --input ros2.repos src/ros2
+
+extra: extra.repos
+	mkdir -p src/extra
+	vcs import --input extra.repos src/extra
 
 deps:
 	sudo rosdep init
@@ -20,4 +24,4 @@ rebuild:
 	colcon build --merge-install --install-base /opt/ros/humble --continue-on-error --cmake-args -D Python3_EXECUTABLE=/usr/bin/python3.8 -D PYBIND11_PYTHON_VERSION=3 -D CMAKE_CXX_FLAGS="-I/usr/local/cuda-11.4/targets/aarch64-linux/include -L/usr/local/cuda-11.4/lib64" --cmake-clean-cache
 
 
-.PHONY: all nvidia ros2 deps build rebuild
+.PHONY: all nvidia ros2 deps build rebuild extra
